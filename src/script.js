@@ -38,8 +38,8 @@ function showContacts(contactBook, groupToShow) { // Rör ej denna kod
     // Loopar igenom alla kontakter och jämför grupp
    
     for (contact of contactBook.contacts) {
-        if (contact.group === groupToshow) {
-            return `Namn: ${contact.name}, Telefon: ${contact.phone}`;
+        if (contact.group === groupToShow) {
+            return `namn: ${contact.name}, Telefon: ${contact.phone}`;
         }
     }
     return "Inga kontakter hittades i den valda gruppen."; // här ska sträng med namn och tekefonnummer visas i form av string interpolation
